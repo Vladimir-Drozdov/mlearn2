@@ -1,0 +1,4 @@
+[core]
+    remote = dvclesson
+['remote "dvclesson"']
+    url = https://github.com/Vladimir-Drozdov/dvclesson

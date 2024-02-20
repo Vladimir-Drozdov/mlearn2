@@ -1,0 +1,2 @@
+#занятие 09.12 - transfer learning - обучаем нейронку при помощи resnet (уже готовая программа) потом добавляем свои слои в обучение и получаем рез-тат
+#https://github.com/spbcoding/ml-aws-course/blob/torch/lab07-cnn-2-transfer.ipynb

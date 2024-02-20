@@ -1,0 +1,28 @@
+schema: '2.0'
+stages:
+  stage_01:
+    cmd: python iris.py
+  stage_02:
+    cmd: python titanic2.py
+    deps:
+    - path: titanic1.py
+      hash: md5
+      md5: 7f385ff6e1744c053cd9b891b4fccd13
+      size: 6209
+    - path: titanic2.py
+      hash: md5
+      md5: 2f902ced553beb527ce9c3dc8d4bf1fe
+      size: 7038
+  stage_03:
+    cmd: python iris.py
+  stage_04:
+    cmd: python titanic2.py
+    deps:
+    - path: titanic1.py
+      hash: md5
+      md5: 54b244b1bdceab4b1033aaeef9c9acdb
+      size: 6204
+    - path: titanic2.py
+      hash: md5
+      md5: eeaf53c6a07b9cb0b7d83b7752b990f5
+      size: 6732

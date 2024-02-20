@@ -1,0 +1,23 @@
+stages:
+  prepare_data:
+    cmd: python ./prepare_data.py
+    deps:
+    - ./params.yaml
+    - ./prepare_data.py
+    outs:
+    - ${data_dir}
+  train:
+    cmd: python ./train.py
+    deps:
+    - ./params.yaml
+    - ./train.py
+    - ${data_dir}
+    metrics:
+    - ${exp_dir}/metrics.yaml
+plots:
+  - logs.csv:
+      x: epochs
+      y: accuracy
+      title: Displaying accuracy
+      x_label: This is epochs
+      y_label: This is accuracy

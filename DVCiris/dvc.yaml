@@ -1,0 +1,12 @@
+stages:
+  stage_01:
+    cmd: python iris.py
+
+plots:
+  - logs.csv:
+      x: epochs
+      y: accuracy
+      title: Displaying accuracy
+      x_label: This is epochs
+      y_label: This is accuracy
+
